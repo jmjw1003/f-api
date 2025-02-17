@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: FastAPI V2 Model",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": ["app.main:app", "--port", "8000"],
+            "jinja": true,
+            "justMyCode": false,
+            "env": {
+                "DATABASE_URL": "${env:DATABASE_URL}"
+            }
+        }
+    ]
+}
